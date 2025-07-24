@@ -17,13 +17,13 @@ jobs:
       - name: Setup .NET
         uses: actions/setup-dotnet@v3
         with:
-          dotnet-version: '8.0.x'  # Adjust if needed
+          dotnet-version: '8.0.x'
 
       - name: Restore dependencies
-        run: dotnet restore
+        run: dotnet restore REMWasteTestAutomationProject/REMWasteTestAutomationProject.sln
 
       - name: Build the project
-        run: dotnet build --configuration Release
+        run: dotnet build REMWasteTestAutomationProject/REMWasteTestAutomationProject.sln --configuration Release
 
       - name: Run tests
-        run: dotnet test --configuration Release
+        run: dotnet test REMWasteTestAutomationProject/REMWasteTestAutomationProject.sln --configuration Release
