@@ -1,0 +1,9 @@
+# Ignore Visual Studio folders and files
+.vs/
+*.user
+*.suo
+
+# Build artifacts
+bin/
+obj/
+TestResults/
